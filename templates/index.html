@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlphaVein</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    
+    <!-- LOGO IMAGE -->
+    <div class="logo">
+      <img 
+        src="{{ url_for('static', filename='images/logo.png') }}" 
+        alt="AlphaVein Gym Logo"
+        class="logo-img"
+      >
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Programs</a>
+      <a href="#">Trainers</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="hero-bg"></div>
+
+    <!-- DARK OVERLAY -->
+    <div class="hero-overlay"></div>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+      <!-- <span class="tagline">Hardcore Bodybuilding Gym</span> -->
+
+      <h1>
+        TRAIN LIKE AN <span>ALPHA</span><br>
+        LIVE <strong>UNBREAKABLE</strong>
+      </h1>
+
+      <p>
+        AlphaVein is built for those who demand strength, knowledge,
+        and real transformation — not excuses.
+      </p>
+
+      <a href="#" class="cta-btn">START YOUR TRANSFORMATION</a>
+    </div>
+
+  </section>
+
+</body>
+</html>

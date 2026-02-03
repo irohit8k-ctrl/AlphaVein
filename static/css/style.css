@@ -1,0 +1,186 @@
+/* =======================
+   RESET
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+/* LOGO IMAGE */
+.logo-img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* NAV LINKS */
+.nav-links a {
+  position: relative;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  padding-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #b6ff00;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b6ff00;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+/* BACKGROUND IMAGE */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/lats.PNG");
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  transform: scale(1.05);
+}
+
+/* DARK OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  max-width: 650px;
+  z-index: 2;
+}
+
+.tagline {
+  color: #aaa;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE MAIN HEADLINE */
+.hero-content h1 {
+  margin: 20px 0;
+  font-weight: 900;
+  line-height: 1.1;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+}
+
+.hero-content h1 span {
+  color: #b6ff00;
+}
+
+.hero-content strong {
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  display: inline-block;
+  padding: 16px 45px;
+  background: #b6ff00;
+  color: #000;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #9be000;
+  transform: translateY(-2px);
+}
+
+/* =======================
+   RIGHT IMAGE (OPTIONAL)
+======================= */
+.hero-right {
+  max-width: 500px;
+}
+
+.hero-right img {
+  width: 100%;
+  filter: contrast(1.1) brightness(0.95);
+}
+
+/* =======================
+   MOBILE OPTIMIZATION
+======================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .logo-img {
+    height: 55px;
+  }
+
+  .hero {
+    padding-left: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
