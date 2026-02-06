@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AlphaVein</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+
+    <!-- INTRO -->
+    <div class="contact-intro">
+      <h1>CONTACT US</h1>
+      <p>
+        Ready to transform your physique and mindset? Get in touch with our team
+        of elite coaches and start your journey to becoming unbreakable.
+      </p>
+    </div>
+
+    <!-- CONTACT GRID -->
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-container">
+        <h2>Send us a message</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="coaching">Personal Coaching</option>
+              <option value="programs">Program Questions</option>
+              <option value="nutrition">Nutrition Advice</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Get in touch</h2>
+
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div class="info-content">
+            <h3>Email</h3>
+            <p>info@alphavein.com</p>
+            <p>coaching@alphavein.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📱</div>
+          <div class="info-content">
+            <h3>Phone</h3>
+            <p>+1 (555) 123-4567</p>
+            <p>Mon-Fri: 6AM - 10PM EST</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div class="info-content">
+            <h3>Location</h3>
+            <p>123 Strength Street</p>
+            <p>Muscle City, MC 12345</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">⏰</div>
+          <div class="info-content">
+            <h3>Response Time</h3>
+            <p>Within 24 hours</p>
+            <p>Priority coaching: Same day</p>
+          </div>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">🐦</a>
+            <a href="#" class="social-icon">💼</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="contact-faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How do I get started?</h3>
+          <p>Fill out the contact form above or email us directly. We'll assess your goals and create a personalized plan.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer online coaching?</h3>
+          <p>Yes! All our programs include online coaching with personalized feedback and progress tracking.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's your success rate?</h3>
+          <p>95% of our clients achieve their primary goals within 12 weeks. Real results, no excuses.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can beginners join?</h3>
+          <p>Absolutely. Our programs are designed for all levels, from complete beginners to advanced athletes.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

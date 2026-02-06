@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workouts | AlphaVein</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- WORKOUTS SECTION -->
+  <section class="workouts">
+
+    <!-- INTRO -->
+    <div class="workouts-intro">
+      <h1>WORKOUTS</h1>
+      <p>
+        Unleash your potential with targeted workouts designed to build muscle,
+        strength, and endurance. Each session is crafted for maximum results.
+      </p>
+    </div>
+
+    <!-- WORKOUT CARDS -->
+    <div class="workout-cards">
+
+      <!-- BACK WORKOUT -->
+      <div class="workout-card">
+        <img src="{{ url_for('static', filename='images/back.PNG') }}" alt="Back Workout">
+        <h3>Back Workout</h3>
+        <p>
+          Strengthen your posterior chain with pull-ups, rows, and deadlifts.
+          Build a powerful back that commands respect.
+        </p>
+        <a href="#" class="workout-btn">View Details</a>
+      </div>
+
+      <!-- LATS WORKOUT -->
+      <div class="workout-card">
+        <img src="{{ url_for('static', filename='images/lats.PNG') }}" alt="Lats Workout">
+        <h3>Lats Workout</h3>
+        <p>
+          Target your lats for that V-taper physique. Incorporate lat pulldowns,
+          pull-ups, and rows for comprehensive development.
+        </p>
+        <a href="#" class="workout-btn">View Details</a>
+      </div>
+
+      <!-- FULL BODY WORKOUT -->
+      <div class="workout-card">
+        <img src="{{ url_for('static', filename='images/myimage.jpeg') }}" alt="Full Body Workout">
+        <h3>Full Body Workout</h3>
+        <p>
+          Comprehensive sessions hitting all major muscle groups. Perfect for
+          beginners or those seeking balanced strength.
+        </p>
+        <a href="#" class="workout-btn">View Details</a>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

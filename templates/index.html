@@ -6,44 +6,55 @@
   <title>AlphaVein</title>
 
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
-    
-    <!-- LOGO IMAGE -->
-    <div class="logo">
-      <img 
-        src="{{ url_for('static', filename='images/logo.png') }}" 
-        alt="AlphaVein Gym Logo"
-        class="logo-img"
-      >
-    </div>
+    <div class="nav-container">
 
-    <!-- NAV LINKS -->
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Programs</a>
-      <a href="#">Trainers</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
-    </nav>
+      <!-- LOGO -->
+      <div class="logo">
+        <img 
+          src="{{ url_for('static', filename='images/logo.png') }}" 
+          alt="AlphaVein Logo"
+        >
+      </div>
+
+      <!-- NAV LINKS -->
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#workouts">Workouts</a>
+        <a href="#exercises">Exercises</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- MOBILE MENU TOGGLE -->
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
   </header>
 
   <!-- HERO SECTION -->
   <section class="hero">
 
-    <!-- BACKGROUND IMAGE -->
-    <div class="hero-bg"></div>
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="{{ url_for('static', filename='css/videos/bg.MOV') }}" type="video/mp4">
+    </video>
 
-    <!-- DARK OVERLAY -->
+    <!-- OVERLAY -->
     <div class="hero-overlay"></div>
 
-    <!-- HERO CONTENT -->
+    <!-- CONTENT -->
     <div class="hero-content">
-      <!-- <span class="tagline">Hardcore Bodybuilding Gym</span> -->
-
       <h1>
         TRAIN LIKE AN <span>ALPHA</span><br>
         LIVE <strong>UNBREAKABLE</strong>
@@ -54,10 +65,326 @@
         and real transformation — not excuses.
       </p>
 
-      <a href="#" class="cta-btn">START YOUR TRANSFORMATION</a>
+      <a href="#contact" class="cta-btn">START YOUR TRANSFORMATION</a>
     </div>
 
   </section>
+
+  <!-- PROGRAMS SECTION -->
+  <section class="programs" id="programs" style="display: none;">
+
+    <!-- INTRO -->
+    <div class="programs-intro">
+      <h1>STRENGTH TRAINING</h1>
+      <p>
+        Strength is the foundation of everything.
+        No shortcuts. No random workouts. Just proven systems that build power,
+        discipline, and dominance.
+      </p>
+    </div>
+
+    <!-- TRAINING PATHS -->
+    <div class="paths">
+
+      <!-- BEGINNER -->
+      <div class="path-card">
+        <h2>BEGINNER</h2>
+        <span class="path-tag">Foundation Phase</span>
+
+        <ul>
+          <li>Learn perfect form</li>
+          <li>Build joint & tendon strength</li>
+          <li>Develop training discipline</li>
+          <li>Full-body workouts (3x/week)</li>
+        </ul>
+
+        <p class="key-lifts">
+          Squat • Bench • Deadlift • Overhead Press • Pull-ups
+        </p>
+      </div>
+
+      <!-- INTERMEDIATE -->
+      <div class="path-card highlight">
+        <h2>INTERMEDIATE</h2>
+        <span class="path-tag">Progress Phase</span>
+
+        <ul>
+          <li>Progressive overload</li>
+          <li>Strength + muscle growth</li>
+          <li>Volume & intensity control</li>
+          <li>Upper / Lower or PPL split</li>
+        </ul>
+
+        <p class="key-lifts">
+          Barbell Squats • Bench Variations • RDL • Rows • Weighted Pull-ups
+        </p>
+      </div>
+
+      <!-- ADVANCED -->
+      <div class="path-card">
+        <h2>ADVANCED</h2>
+        <span class="path-tag">Alpha Phase</span>
+
+        <ul>
+          <li>Max strength development</li>
+          <li>Powerbuilding programs</li>
+          <li>Weak-point specialization</li>
+          <li>Periodized training cycles</li>
+        </ul>
+
+        <p class="key-lifts">
+          Heavy Squat • Heavy Bench • Heavy Deadlift • Advanced Accessories
+        </p>
+      </div>
+
+    </div>
+
+    <!-- WHY DIFFERENT -->
+    <div class="why-alpha">
+      <h2>WHY ALPHAVEIN STRENGTH?</h2>
+
+      <div class="why-grid">
+        <div>✔ Structured progression</div>
+        <div>✔ Coach-guided programs</div>
+        <div>✔ No random workouts</div>
+        <div>✔ Beginner-safe, advanced-lethal</div>
+        <div>✔ Science + discipline</div>
+        <div>✔ Real results only</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="programs-cta">
+      <a href="#contact" class="cta-btn">START STRENGTH TRAINING</a>
+    </div>
+
+  </section>
+
+  <!-- WORKOUTS SECTION -->
+  <section class="workouts" id="workouts" style="display: none;">
+
+    <!-- INTRO -->
+    <div class="workouts-intro">
+      <h1>WORKOUTS</h1>
+      <p>
+        Unleash your potential with targeted workouts designed to build muscle,
+        strength, and endurance. Each session is crafted for maximum results.
+      </p>
+    </div>
+
+    <!-- WORKOUT CARDS -->
+    <div class="workout-cards">
+
+      <!-- BACK WORKOUT -->
+      <div class="workout-card">
+        <img src="{{ url_for('static', filename='images/back.PNG') }}" alt="Back Workout">
+        <h3>Back Workout</h3>
+        <p>
+          Strengthen your posterior chain with pull-ups, rows, and deadlifts.
+          Build a powerful back that commands respect.
+        </p>
+        <a href="#" class="workout-btn">View Details</a>
+      </div>
+
+      <!-- LATS WORKOUT -->
+      <div class="workout-card">
+        <img src="{{ url_for('static', filename='images/lats.PNG') }}" alt="Lats Workout">
+        <h3>Lats Workout</h3>
+        <p>
+          Target your lats for that V-taper physique. Incorporate lat pulldowns,
+          pull-ups, and rows for comprehensive development.
+        </p>
+        <a href="#" class="workout-btn">View Details</a>
+      </div>
+
+      <!-- FULL BODY WORKOUT -->
+      <div class="workout-card">
+        <img src="{{ url_for('static', filename='images/myimage.jpeg') }}" alt="Full Body Workout">
+        <h3>Full Body Workout</h3>
+        <p>
+          Comprehensive sessions hitting all major muscle groups. Perfect for
+          beginners or those seeking balanced strength.
+        </p>
+        <a href="#" class="workout-btn">View Details</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact" style="display: none;">
+
+    <!-- INTRO -->
+    <div class="contact-intro">
+      <h1>CONTACT US</h1>
+      <p>
+        Ready to transform your physique and mindset? Get in touch with our team
+        of elite coaches and start your journey to becoming unbreakable.
+      </p>
+    </div>
+
+    <!-- CONTACT GRID -->
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-container">
+        <h2>Send us a message</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="coaching">Personal Coaching</option>
+              <option value="programs">Program Questions</option>
+              <option value="nutrition">Nutrition Advice</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Get in touch</h2>
+
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div class="info-content">
+            <h3>Email</h3>
+            <p>info@alphavein.com</p>
+            <p>coaching@alphavein.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📱</div>
+          <div class="info-content">
+            <h3>Phone</h3>
+            <p>+1 (555) 123-4567</p>
+            <p>Mon-Fri: 6AM - 10PM EST</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div class="info-content">
+            <h3>Location</h3>
+            <p>123 Strength Street</p>
+            <p>Muscle City, MC 12345</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">⏰</div>
+          <div class="info-content">
+            <h3>Response Time</h3>
+            <p>Within 24 hours</p>
+            <p>Priority coaching: Same day</p>
+          </div>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">🐦</a>
+            <a href="#" class="social-icon">💼</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="contact-faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How do I get started?</h3>
+          <p>Fill out the contact form above or email us directly. We'll assess your goals and create a personalized plan.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer online coaching?</h3>
+          <p>Yes! All our programs include online coaching with personalized feedback and progress tracking.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's your success rate?</h3>
+          <p>95% of our clients achieve their primary goals within 12 weeks. Real results, no excuses.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can beginners join?</h3>
+          <p>Absolutely. Our programs are designed for all levels, from complete beginners to advanced athletes.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- JAVASCRIPT FOR SPA NAVIGATION -->
+  <script>
+    // Function to show a specific section and hide others
+    function showSection(sectionId) {
+      // Hide all sections
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      // Show the selected section
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.style.display = 'block';
+      }
+    }
+
+    // Add event listeners to nav links
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.nav-links a');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const href = this.getAttribute('href');
+          const sectionId = href.substring(1); // Remove the '#'
+
+          // Special case for home - show hero
+          if (sectionId === 'home') {
+            showSection('hero');
+          } else {
+            showSection(sectionId);
+          }
+        });
+      });
+
+      // Mobile menu toggle
+      const mobileToggle = document.querySelector('.mobile-menu-toggle');
+      const navLinksContainer = document.querySelector('.nav-links');
+
+      mobileToggle.addEventListener('click', function() {
+        navLinksContainer.classList.toggle('active');
+      });
+    });
+  </script>
 
 </body>
 </html>
